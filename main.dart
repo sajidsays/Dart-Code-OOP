@@ -176,3 +176,146 @@
 // ***************************************************************************
 
 // Note : we can not use default and para constructor at same time but can use unlimited named constructor with para.
+
+// ***************************************************************************
+
+// Data Inheritance in OOP
+
+// ***************************************************************************
+
+// void main() {
+// var obj = class2();
+//   var obj = class3();
+//   obj.funct1();
+// }
+
+// class class1 {
+//   funct1() {
+//     print("This is Sajid Khan Afridi");
+//   }
+// }
+
+// class class2 extends class1 {}
+
+// class class3 extends class2 {}
+
+// ***************************************************************************
+
+// Example <---------------------------------->
+
+// ***************************************************************************
+
+// void main() {
+//   var obj = hr();
+//   obj.role();
+//   var obj1 = IT();
+//   obj1.role();
+// }
+
+// class employee {
+//   var name = "Sajid Khan Afridi";
+//   var designation = "SQA";
+//   var age = 22;
+//   var email = "thisismeafridi@gmail.com";
+// }
+
+// class employee2 {
+//   var name = "Qaisar Hayat Khan";
+//   var designation = "Digital Marketer";
+//   var age = 23;
+//   var email = "qaisarhayatkhan123@gmail.com";
+// }
+
+// class hr extends employee {
+//   role() {
+//     print(name);
+//     print(designation);
+//     print(age);
+//     print(email);
+//   }
+// }
+
+// class IT extends employee {
+//   role() {
+//     print(name);
+//     print(designation);
+//     print(age);
+//     print(email);
+//   }
+// }
+
+// ***************************************************************************
+
+// if we see in above example, it is not allowed us to print another function which is placed in second extends so for this we "super."
+
+// void main() {
+//   var identity = person2();
+//   identity.human2();
+// }
+
+// class person {
+// var name1 = "Sajid";
+//   human() {
+//     print("Sajid Khan Afridi");
+//   }
+// }
+
+// class person2 extends person {
+// var name = "Qaisar";
+// human2() {
+// print(super.name1);
+// print(name);
+//     this.human();
+//     print("Qaisar Hayat Khan");
+//   }
+// }
+
+// ***************************************************************************
+
+// Abstract is keyword which is not used as a object. Abstract class contain normal functions and variables.
+// it is used when we access one function (which is vacant) in another insatant or extends.
+
+// ***************************************************************************
+
+// void main() {
+//   var obj = person2();
+//   obj.funct1();
+// }
+
+// abstract class person1 {
+//   funct1() {}
+// }
+
+// class person2 extends person1 {
+//   funct1() {
+//     print("Sajid Khan Afridi");
+//   }
+// }
+
+// ***************************************************************************
+
+// use of implements (it is used when we have to use two function together in a single instant just like below).
+
+// ***************************************************************************
+
+// void main() {
+//   var obj = class2();
+//   obj.funct1();
+//   obj.funct2();
+// }
+
+// class class1 {
+//   funct1() {
+//     print("class1_funct1");
+//   }
+// }
+
+// class class2 implements class1 {
+//   funct1() {
+//     print("class2_funct1");
+//   }
+
+//   funct2() {
+//     print("class2_funct2");
+//   }
+// }
